@@ -20,6 +20,7 @@ export class ChatComponent implements OnInit, OnDestroy {
   clients$: Observable<ChatClientDto[]> | undefined;
   chatClient: ChatClientDto | undefined;
   error$: Observable<string> | undefined;
+  socketId: string | undefined;
   constructor(private chatService: ChatService) { }
 
   ngOnInit(): void {
@@ -65,7 +66,22 @@ export class ChatComponent implements OnInit, OnDestroy {
     if (this.chatService.chatClient) {
       this.chatService.sendNickname(this.chatService.chatClient.nickname);
     }
-  }
+
+    this.chatService.listenForConnect()
+        .pipe(
+            takeUntil(this.unsubscribe$)
+        )
+        .subscribe((id) => {
+           this.socketId = id;
+    });
+    this.chatService.listenForDisconnect()
+        .pipe(
+            takeUntil(this.unsubscribe$)
+        )
+        .subscribe((id) => {
+          this.socketId = id;
+        });
+    }
 
   ngOnDestroy(): void {
     console.log('Destroyed');

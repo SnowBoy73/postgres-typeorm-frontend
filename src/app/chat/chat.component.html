@@ -1,4 +1,9 @@
+<div *ngIf="!socketId" style="color: darkred">
+  You are not connected
+</div>
 <div class="row vh-100" *ngIf="chatClient" style="padding-top: 30px">
+
+
 
   <div class="col-3">
     <div class="card h-100">
@@ -21,7 +26,7 @@
   <div class="col-9">
     <div class="card h-100">
       <div class="card-header">
-        <h5 style="font-size:24px">Start chatting {{chatClient.nickname}} </h5>
+        <h5 style="font-size:24px">Start chatting {{chatClient.nickname}}n {{socketId}}</h5>
       </div>
       <div class="card-body">
         <h4 class="messageList" *ngFor="let message of messages">
