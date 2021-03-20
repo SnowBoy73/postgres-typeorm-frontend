@@ -4,8 +4,6 @@
     <list default="true" id="a5fc5dd9-732e-4cad-9709-2b6460acfb00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/chat/chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/chat.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/chat/chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/chat.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/chat/shared/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/shared/chat.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +70,11 @@
       <workItem from="1615661063177" duration="1507000" />
       <workItem from="1615731843927" duration="3041000" />
       <workItem from="1616083536626" duration="4112000" />
+      <workItem from="1616091989378" duration="1170000" />
+      <workItem from="1616155098217" duration="5000" />
+      <workItem from="1616157777416" duration="1022000" />
+      <workItem from="1616167675917" duration="35000" />
+      <workItem from="1616252038859" duration="1764000" />
     </task>
     <servers />
   </component>
